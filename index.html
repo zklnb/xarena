@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng Nhập - XTOPARENA</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>🚀 Chào mừng đến XTOPARENA</h2>
+      <input type="text" id="username" placeholder="👤 Tên đăng nhập" required>
+      <input type="password" id="password" placeholder="🔑 Mật khẩu" required>
+      <button onclick="dangNhap()">🔓 Đăng nhập</button>
+    </div>
+  </div>
+
+  <!-- 👇 Viết xử lý đăng nhập ở cuối HTML -->
+  <script>
+    function dangnhap() {
+      const u = document.getElementById('username').value.trim();
+      const p = document.getElementById('password').value.trim();
+
+      if (u === 'zklnb' && p === '123456') {
+        localStorage.setItem('daDangNhap', 'true');
+        window.location.href = 'https://xtoparena.github.io/';
+      } else {
+        alert('❌ Sai tài khoản hoặc mật khẩu!');
+      }
+    }
+  </script>
+</body>
+</html>
