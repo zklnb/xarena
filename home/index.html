@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Xarena - Trang Chính</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Xarena</h1>
+    <button id="logoutBtn">Đăng xuất</button>
+  </header>
+
+  <main>
+    <section class="search-box">
+      <input type="text" id="searchInput" placeholder="Tìm kiếm video...">
+      <button onclick="timKiemVideo()">Tìm</button>
+    </section>
+
+    <section class="videos" id="videoList">
+      <!-- Video mẫu -->
+      <div class="video">
+        <iframe width="300" height="180" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        <p>Video ví dụ</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
