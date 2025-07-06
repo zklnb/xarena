@@ -1,71 +1,49 @@
-/* Xóa margin/padding mặc định, căn giữa toàn trang */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Segoe UI', sans-serif;
+/* login-style.css - Giao diện cho trang đăng nhập */
 
-  /* Nền chuyển màu đen-xám mượt */
-  background: linear-gradient(135deg, #000000, #1a1a1a);
-
-  /* Căn giữa ngang dọc */
+body {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
-/* Container bao khung đăng nhập */
-.login-container {
-  width: 100%;
-  max-width: 400px;
-  padding: 20px;
-}
-
-/* Khung đăng nhập chính */
 .login-box {
-  background: rgba(255, 255, 255, 0.05);         /* nền trong suốt nhẹ */
-  backdrop-filter: blur(10px);                  /* hiệu ứng mờ đẹp */
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 15px;                          /* bo tròn */
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);          /* bóng */
-  padding: 40px 30px;
+  width: 320px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
   text-align: center;
-  color: white;
 }
 
-/* Tiêu đề trong hộp */
 .login-box h2 {
-  margin-bottom: 25px;
-  font-weight: normal;
+  margin-bottom: 20px;
 }
 
-/* Ô nhập liệu */
 .login-box input {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   margin: 10px 0;
   border: none;
-  border-radius: 8px;
-  background: rgba(255,255,255,0.1);
-  color: white;
-  font-size: 14px;
+  border-radius: 5px;
 }
 
-/* Nút đăng nhập */
 .login-box button {
   width: 100%;
-  padding: 12px;
-  background: #ff0033;
-  color: white;
-  font-weight: bold;
+  padding: 10px;
   border: none;
-  border-radius: 8px;
-  font-size: 15px;
-  transition: background 0.3s;
+  background: #00bfff;
+  color: white;
+  border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
 }
 
-/* Khi rê chuột lên nút */
 .login-box button:hover {
-  background: #cc0029;
+  background: #009acd;
 }
