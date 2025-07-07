@@ -83,7 +83,7 @@ main {
 }
 
 .video iframe {
-  width: 100%;                          /* Video chiếm hết chiều rộng khối */
+  width: 300%;                          /* Video chiếm hết chiều rộng khối */
   height: 180px;                        /* Chiều cao video */
 }
 
