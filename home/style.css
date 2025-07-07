@@ -1,93 +1,93 @@
 /* Giao diện chính của trang home */
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f5f5f5;
+  font-family: Arial, sans-serif;       /* Sử dụng font chữ Arial, nếu không có thì sans-serif */
+  margin: 0;                            /* Xóa toàn bộ khoảng cách mặc định ngoài */
+  background: #f5f5f5;                  /* Màu nền xám nhạt cho toàn trang */
 }
 
 header {
-  background: #1e90ff;
-  color: white;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background: #1e90ff;                  /* Màu nền xanh dương tươi */
+  color: white;                         /* Chữ màu trắng */
+  padding: 15px 30px;                   /* Khoảng cách trên/dưới 15px, trái/phải 30px */
+  display: flex;                        /* Dùng Flexbox để sắp xếp ngang */
+  justify-content: space-between;      /* Khoảng cách giữa các phần tử trong header đều nhau (trái - phải) */
+  align-items: center;                 /* Căn giữa theo chiều dọc */
 }
 
 header h1 {
-  margin: 0;
-  font-size: 24px;
+  margin: 0;                            /* Bỏ khoảng cách mặc định */
+  font-size: 24px;                      /* Cỡ chữ tiêu đề */
 }
 
 header button {
-  background: white;
-  color: #1e90ff;
-  border: none;
-  padding: 8px 16px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+  background: white;                    /* Nút có nền trắng */
+  color: #1e90ff;                       /* Màu chữ xanh dương */
+  border: none;                         /* Không viền */
+  padding: 8px 16px;                    /* Đệm trong nút: trên/dưới 8px, trái/phải 16px */
+  font-weight: bold;                   /* Chữ đậm */
+  border-radius: 5px;                   /* Bo tròn góc */
+  cursor: pointer;                      /* Đổi chuột thành bàn tay khi rê vào */
+  transition: 0.3s;                     /* Hiệu ứng chuyển mượt khi hover */
 }
 
 header button:hover {
-  background: #e0e0e0;
+  background: #e0e0e0;                  /* Khi hover thì nền chuyển sang xám nhạt */
 }
 
 main {
-  padding: 30px;
-  max-width: 1000px;
-  margin: auto;
+  padding: 30px;                        /* Đệm bên trong toàn bộ phần nội dung */
+  max-width: 1000px;                    /* Chiều rộng tối đa là 1000px */
+  margin: auto;                         /* Căn giữa khối nội dung ngang màn hình */
 }
 
 .search-box {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+  display: flex;                        /* Dùng flex để input và button nằm cùng dòng */
+  justify-content: center;             /* Căn giữa toàn bộ khối tìm kiếm */
+  margin-bottom: 30px;                 /* Khoảng cách bên dưới khối tìm kiếm */
 }
 
 .search-box input {
-  width: 300px;
-  padding: 10px;
-  border: 1px solid #aaa;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  font-size: 16px;
+  width: 300px;                         /* Độ rộng ô tìm kiếm */
+  padding: 10px;                        /* Đệm trong */
+  border: 1px solid #aaa;              /* Viền màu xám */
+  border-radius: 5px 0 0 5px;           /* Bo tròn bên trái */
+  outline: none;                        /* Bỏ viền xanh khi focus */
+  font-size: 16px;                      /* Cỡ chữ ô tìm kiếm */
 }
 
 .search-box button {
-  padding: 10px 20px;
-  border: none;
-  background: #1e90ff;
-  color: white;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 16px;
+  padding: 10px 20px;                   /* Đệm trong nút */
+  border: none;                         /* Không viền */
+  background: #1e90ff;                  /* Màu nền xanh */
+  color: white;                         /* Chữ trắng */
+  border-radius: 0 5px 5px 0;           /* Bo tròn bên phải */
+  cursor: pointer;                      /* Biểu tượng chuột bàn tay khi hover */
+  font-size: 16px;                      /* Cỡ chữ */
 }
 
 .videos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  display: flex;                        /* Flexbox để sắp xếp các video */
+  flex-wrap: wrap;                      /* Tự xuống hàng nếu thiếu chỗ */
+  gap: 20px;                            /* Khoảng cách giữa các video */
+  justify-content: center;             /* Căn giữa toàn bộ danh sách video */
 }
 
 .video {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  overflow: hidden;
-  width: 300px;
-  text-align: center;
+  background: white;                    /* Nền trắng cho khối video */
+  border-radius: 10px;                  /* Bo tròn toàn khối */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);/* Đổ bóng nhẹ */
+  overflow: hidden;                     /* Ẩn phần dư (để bo góc đẹp) */
+  width: 300px;                         /* Chiều rộng mỗi khối video */
+  text-align: center;                   /* Căn giữa chữ bên dưới video */
 }
 
 .video iframe {
-  width: 100%;
-  height: 180px;
+  width: 640%;                          /* Video chiếm hết chiều rộng khối */
+  height: 360px;                        /* Chiều cao video */
 }
 
 .video p {
-  margin: 10px;
-  font-weight: bold;
+  margin: 10px;                         /* Khoảng cách bên trong đoạn mô tả */
+  font-weight: bold;                   /* Chữ đậm */
 }
