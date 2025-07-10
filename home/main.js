@@ -27,7 +27,6 @@ function timKiemVideo() {
   videoList.innerHTML = `
     <div class="video">
       <iframe src="https://www.youtube.com/embed/${videoId}" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/${videoId}" allowfullscreen></iframe>
       <p>Kết quả cho: ${query}</p>
     </div>
   `;
