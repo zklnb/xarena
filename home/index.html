@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Xarena</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="main.js"></script>
+  <link rel="stylesheet" href="style.css"> <!-- Kết nối file CSS -->
+  <script defer src="main.js"></script> <!-- Kết nối file JS -->
 </head>
 <body>
   <header>
@@ -13,17 +13,55 @@
   </header>
 
   <main>
+    <!-- Ô tìm kiếm video -->
     <section class="search-box">
       <input type="text" id="searchInput" placeholder="Tìm kiếm video...">
       <button onclick="timKiemVideo()">Tìm</button>
     </section>
 
+    <!-- Danh sách video -->
     <section class="videos" id="videoList">
-      <!-- Video mẫu -->
+
+      <!-- Video 1 -->
       <div class="video">
-        <iframe width="500" height="280" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        <p>Video ví dụ</p>
+        <iframe width="300" height="180" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                allowfullscreen></iframe>
+        <p>🎵 Rick Astley - Never Gonna Give You Up</p>
       </div>
+
+      <!-- Video 2 -->
+      <div class="video">
+        <iframe width="300" height="180" 
+                src="https://www.youtube.com/embed/9bZkp7q19f0" 
+                allowfullscreen></iframe>
+        <p>🎶 PSY - Gangnam Style</p>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="video">
+        <iframe width="300" height="180" 
+                src="https://www.youtube.com/embed/3JZ_D3ELwOQ" 
+                allowfullscreen></iframe>
+        <p>🎤 Wiz Khalifa ft. Charlie Puth - See You Again</p>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="video">
+        <iframe width="300" height="180" 
+                src="https://www.youtube.com/embed/kJQP7kiw5Fk" 
+                allowfullscreen></iframe>
+        <p>🌴 Luis Fonsi - Despacito</p>
+      </div>
+
+      <!-- Video 5 -->
+      <div class="video">
+        <iframe width="300" height="180" 
+                src="https://www.youtube.com/embed/hT_nvWreIhg" 
+                allowfullscreen></iframe>
+        <p>🔥 OneRepublic - Counting Stars</p>
+      </div>
+
     </section>
   </main>
 </body>
